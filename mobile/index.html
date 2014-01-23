@@ -3,8 +3,8 @@
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
+        <title>Test @ Iveristy Web Engineering II</title>
+        <meta name="description" content="web development with Iversity ">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,20 +36,43 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     </head>
     <body>
+    	<header id="mainheader">Web Engineering II - homework 1</header>
 
-        <!-- Add your site or application content here -->
+        <section id="maincontent">
+        
+        	<canvas id="canvas1" width="300" height="300">PLACEHOLDER FOR CANVAS</canvas>
+        	<script type="text/javascript" charset="utf-8">
+
+       			var canvas = document.getElementById('canvas1');
+       			if (canvas.getContext){
+		         	var context = canvas.getContext('2d');
+		            context.fillStyle = "rgb(255,230,156)";
+		            context.fillRect (10, 10, 100, 100);
+		            context.fillStyle = "rgb(232,164,151)";
+		            context.fillRect (20, 20, 100, 100);
+		            context.fillStyle = "rgb(154,202,232)";
+		            context.fillRect (30, 30, 100, 100);
+		            context.fillStyle = "rgb(156,255,169)";
+		            context.font = "italic 40px 'Arial'"; 
+		            context.fillText("Iversity", 60, 100);
+       			}
+
+     </script>
+        
+        </section>
+        
+        
+        
+        
+        <footer id="mainfooter">Copyrights 2014 - Lukasz Caputa</footer>
+        
 
         <script src="js/vendor/zepto.min.js"></script>
         <script src="js/helper.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-            s.parentNode.insertBefore(g,s)}(document,"script"));
-        </script>
+
     </body>
 </html>
